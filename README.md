@@ -15,7 +15,7 @@ Traz uma descrição sobre a receita.
 - **PRIORITY**:
 
 - **LICENSE**:  
-Define o tipo de licença a ser utilizada pelo software.  
+Define o tipo de licença a ser utilizada pelo software. Nesta receita estamos utilizando a licença MIT e seu arquivo é disponibilizado pelo Yocto Project em: *${COMMON_LICENSE_DIR}/MIT*
 
 - **LIC_FILES_CHKSUM**:  
 Informa o checksum do arquivo de licença para validar que não esteja corrompido.
@@ -24,10 +24,10 @@ Informa o checksum do arquivo de licença para validar que não esteja corrompid
 Esta variável está comentada nesta receita, mas ela com o valor "**0**" remove a validação do checkum do código fonte.
 
 - **SRC_URI**:  
-Informa onde está localizado o código fonte deste software para que o *OpenEmbedded Build System* possa baixar.
+Informa onde está localizado o código fonte deste software para que o *OpenEmbedded Build System* possa baixar. Nesta receita o código fonte é: [HelloGit](https://github.com/tsrrocha/hellogit)
 
 - **SRCREV**:  
-Como estamos utilizando um repositório *GIT*, então, esta variável contém o código do commit.
+Como estamos utilizando um repositório *GIT*, então, esta variável contém o código do commit. No caso desta receita, utilizamos o seguinte commit: [602a1da3f778c725a9a2b72cdafa3b051594b1dc](https://github.com/tsrrocha/hellogit/commit/602a1da3f778c725a9a2b72cdafa3b051594b1dc)
 
 - **S**:  
 Esta variável contem a informação de onde será armazenado o código fonte do software após ser baixado através do método do_fetch(), e no nosso caso, como estamos utilizando um repositório *GIT* esta variável é configurada para "**${WORKDIR}/git**".
